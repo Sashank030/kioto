@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Prim's Algorithm Visualization</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="knapsack.css">
+    <title>Knapsack Visualization</title>
 </head>
 <body>
-  <input type="number" id="numNodes" value="10">
-  <button id="generateGraphBtn">Generate Graph</button>
-  <input type="text" id="edgeWeights" value="10,20,30,40,50">
-  <button id="visualizeMSTBtn">Visualize MST</button>
-  <canvas id="canvas" width="500" height="500"></canvas>
+    <h1>Knapsack Visualization</h1>
 
-  <script src="script.js"></script>
+    <div id="container">
+        <div id="inputs">
+            <input type="number" id="capacity" placeholder="Knapsack Capacity">
+            <div id="items">
+                <div class="item-input">
+                    <h2>Available Items</h2>
+                    <input type="text" class="item-name" placeholder="Item Name">
+                    <input type="number" class="item-value" placeholder="Value">
+                    <input type="number" class="item-weight" placeholder="Weight">
+                </div>
+            </div>
+            <button type="button" id="add_item">Add Item</button>
+            <button type="button" id="calculate_knapsack">Calculate</button>
+        </div>
+    </div>
+    <div id="footer">
+        SASHANK ASAPU
+        VU21CSEN0101461
+    </div>
+
+    <div id="knapsack"></div>
+
+    <script src="knapsack.js"></script>
 </body>
 </html>
