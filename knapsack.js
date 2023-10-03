@@ -1,8 +1,5 @@
-// Initialize variables to store items, capacity, and item objects with profit and weight
 var items = [];
 var capacity = 0;
-
-// Function to add an item to the list
 function addItem() {
     var itemName = document.querySelector(".item-name").value;
     var itemValue = parseInt(document.querySelector(".item-value").value);
