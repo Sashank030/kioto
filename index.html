@@ -7,6 +7,11 @@
     <title>Knapsack Visualization</title>
 </head>
 <body>
+    <div class="top-right">
+        Sashank A
+        VU21CSEN0101461
+    </div>
+
     <h1>Knapsack Visualization</h1>
 
     <div id="container">
@@ -24,12 +29,50 @@
             <button type="button" id="calculate_knapsack">Calculate</button>
         </div>
     </div>
-    <div id="footer">
-        SASHANK ASAPU
-        VU21CSEN0101461
+
+    <div id="dp-table"></div>
+    <div id="knapsack"></div>
+    
+    <div id="algorithm-container">
+        <h2>Knapsack Algorithm</h2>
+        <button type="button" id="show_algorithm">Show Algorithm</button>
+        <div id="algorithm-content" style="display: none;">
+            <pre>
+def knapsack(items, capacity):
+    """Solves the knapsack problem using a greedy algorithm.
+
+    Args:
+        items: A list of items, where each item is a tuple of (weight, 
+            value).
+        capacity: The knapsack capacity.
+
+    Returns:
+        The maximum value that can be put in the knapsack.
+    """
+
+    # Sort the items in decreasing order of value per weight.
+    items.sort(key=lambda item: item[1] / item[0], reverse=True)
+
+    # Initialize the knapsack value.
+    knapsack_value = 0
+
+    # Iterate over the items and add them to the knapsack until we reach 
+    the capacity.
+    for item in items:
+        if knapsack_value + item[1] <= capacity:
+            knapsack_value += item[1]
+            capacity -= item[0]
+        else:
+            break
+    return knapsack_value
+            </pre>
+        </div>
     </div>
 
-    <div id="knapsack"></div>
+    <div id="footer">
+        Sashank A
+        VU21CSEN0101461
+    </div>
 
     <script src="knapsack.js"></script>
 </body>
