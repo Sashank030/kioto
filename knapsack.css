@@ -4,6 +4,13 @@ body {
   font-size: 16px;
 }
 
+title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
 #knapsack {
   width: 500px;
   margin: 0 auto;
@@ -11,7 +18,11 @@ body {
   background-color: #eee;
   padding: 10px;
 }
-
+#algorithm-content{
+  width: 40em;
+  border: 1px solid black;
+  background-color: #eee;
+}
 
 
 #inputs {
@@ -31,21 +42,18 @@ button {
   background-color: #000;
   color: #fff;
 }
+
 #footer {
-    text-align: right;
-    padding: 15px; 
-    background-color: #333;
-    color: #fff; 
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
+  text-align: right;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
 }
-#footer {
-    text-align: right;
-    padding: 10px; 
-    background-color: #333;
-    color: #fff; 
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
+.top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
 }
