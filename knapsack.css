@@ -57,3 +57,89 @@ button {
   background-color: #333;
   color: #fff;
 }
+body {
+  background-color: #6fa7d1;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+#knapsack {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #eee;
+  padding: 10px;
+}
+#algorithm-content{
+  width: 40em;
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+
+#inputs {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 10px;
+}
+
+input, button {
+  width: 100px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+}
+
+#footer {
+  text-align: right;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+}
+.top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+#add_item {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#add_item:hover {
+  background-color: #cd5b5b;
+}
+#calculate_knapsack {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#calculate_knapsack:hover {
+  background-color: #cd5b5b;
+}
+#show_algorithm {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#show_algorithm:hover {
+  background-color: #cd5b5b;
+}
